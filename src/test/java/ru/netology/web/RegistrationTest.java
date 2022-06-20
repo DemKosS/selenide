@@ -27,8 +27,8 @@ class RegistrationTest {
         $$("[name='number']").last().setValue("4055 0100 0123 4613 8564");
         $$("[name='phone']").last().setValue("+792000000000");
         $$("button").find(exactText("Продолжить")).click();
-        $(withText("Успешная авторизация")).shouldBe(visible, Duration.ofSeconds(5));
-        $(byText("Личный кабинет")).shouldBe(visible, Duration.ofSeconds(5));
+        $(withText("Успешная авторизация")).shouldBe(visible, Duration.ofSeconds(15));
+        $(byText("Личный кабинет")).shouldBe(visible, Duration.ofSeconds(15));
     }
 }
 

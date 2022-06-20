@@ -11,7 +11,7 @@ build: off  # для использования своего скрипта сб
 install:
   # запуск SUT (& означает, что в фоновом режиме - не блокируется терминал для запуска тестов)
   -- java -jar ./artifacts/app-card-delivery.jar &
-  - chmod +x gradlew
+
 build_script:
   - chmod +x gradlew #  предоставление прав на запуск файла gradlew
   - ./gradlew test --info  # запуск тестов, флаг --info позволяет выводить больше информации

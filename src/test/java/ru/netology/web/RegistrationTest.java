@@ -21,7 +21,7 @@ class RegistrationTest {
         Configuration.holdBrowserOpen = true;
         open("http://0.0.0.0:9999/");
         $x("(//input[contains(@class,'input__control')])[1]").setValue("Иванов Иван");
-        $("[name='phone']").setValue("+792000000000");
+        $("[name='phone']").setValue("+79212345567");
         $("[data-test-id=agreement]>.checkbox__box").click();
         $$("button").find(exactText("Продолжить")).click();
 
